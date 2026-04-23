@@ -8,11 +8,27 @@
       background: #eee;
       font-family: Helvetica, Arial, sans-serif;
     }
-<div style="background:black; color:white; overflow:hidden; white-space:nowrap; font-size:14px; padding:6px 0;">
-  <div style="display:inline-block; padding-left:100%; animation: scroll 12s linear infinite;">
-    designed for easy dressing designed for easy dressing designed for easy dressing
-  </div>
-</div>
+
+    .ticker {
+      background: black;
+      color: white;
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 14px;
+      padding: 6px 0;
+    }
+
+    .ticker-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 10s linear infinite;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
     .hero {
       height: 100vh;
       display: flex;
@@ -22,17 +38,19 @@
 
     h1 {
       font-size: 120px;
-      font-weight: bold;
       margin: 0;
     }
   </style>
 </head>
+
 <body>
-<div style="background:black; color:white; overflow:hidden; white-space:nowrap; font-size:14px; padding:6px 0;">
-  <div style="display:inline-block; padding-left:100%; animation: scroll 12s linear infinite;">
-    designed for easy dressing designed for easy dressing designed for easy dressing
+
+  <div class="ticker">
+    <div class="ticker-text">
+      designed for easy dressing designed for easy dressing designed for easy dressing
+    </div>
   </div>
-</div>
+
   <div class="hero">
     <h1>shrv.</h1>
   </div>
