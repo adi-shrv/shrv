@@ -1,0 +1,39 @@
+<!-- TICKER BAR -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>an ongoing archive — an ongoing archive — an ongoing archive —</span>
+    <span>an ongoing archive — an ongoing archive — an ongoing archive —</span>
+  </div>
+</div>
+
+<style>
+.ticker {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #111;
+  color: #f5f3ef;
+  overflow: hidden;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.ticker-track span {
+  white-space: nowrap;
+  padding-right: 40px;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+</style>
